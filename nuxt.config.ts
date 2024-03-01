@@ -6,5 +6,5 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxt/ui"],
 });

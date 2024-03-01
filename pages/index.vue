@@ -32,6 +32,12 @@ async function scan() {
       <div class="flex justify-center">
         <UButton @click="scan">Scan</UButton>
       </div>
+      <div class="flex justify-center my-4">
+        <h1 class="text-xl">OR</h1>
+      </div>
+      <UFormGroup>
+        <input type="file" accept="image/*" capture="environment" />
+      </UFormGroup>
     </UContainer>
     <UCard class="m-4">
       <p v-if="scanning">Scanning...</p>

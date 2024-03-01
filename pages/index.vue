@@ -20,16 +20,16 @@ async function scan() {
   <Head>
     <Title>{{ title }}</Title>
   </Head>
-  <div class="container p-4">
+  <UContainer class="p-4">
     <h1 class="text-xl">Image to Text</h1>
-    <UContainer class="m-4 w-1/2">
+    <UContainer class="m-4">
       <UFormGroup label="Image URL" class="mb-4">
         <UInput
           placeholder="https://example-image.com/sample.png"
           v-model="imageUrl"
         />
       </UFormGroup>
-      <div class="flex flex-row-reverse">
+      <div class="flex justify-center">
         <UButton @click="scan">Scan</UButton>
       </div>
     </UContainer>
@@ -37,5 +37,5 @@ async function scan() {
       <p v-if="scanning">Scanning...</p>
       <p v-else>{{ text }}</p>
     </UCard>
-  </div>
+  </UContainer>
 </template>

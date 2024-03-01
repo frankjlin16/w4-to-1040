@@ -1,0 +1,18 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bunx --bun nuxt build",
+    "dev": "bunx --bun nuxt dev",
+    "generate": "bunx --bun nuxt generate",
+    "preview": "bunx --bun nuxt preview",
+    "postinstall": "bunx --bun nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^3.10.3",
+    "tesseract.js": "^5.0.5",
+    "vue": "^3.4.19",
+    "vue-router": "^4.3.0"
+  }
+}
